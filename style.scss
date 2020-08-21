@@ -1,0 +1,96 @@
+@import './_resets';
+@import './variables';
+@import './mixins';
+
+.dark-theme {
+    background: #000;
+    color: #fff;
+}
+
+nav {
+    background-color: $primary-color;
+    height: 45px;
+    border-bottom: 3px solid $secondary-color;
+    padding: 0 1em;
+    @include flex(row, center, flex-start);
+    top: 0;
+    position: sticky;
+}
+
+nav ul {
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    left: -275px;
+    height: 100%;
+    width: 275px;
+    @include flex(column, center, center);
+    transition: left 0.57s ease-in-out;
+}
+
+nav button {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-closed {
+    left: -275px;
+}
+
+.nav-opened {
+    left: 0;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    border: 2px solid purple;
+    padding: 2em 0;
+    max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    display: flow-root;
+}
+
+h1, p {
+    padding: 0 1rem;
+}
+
+footer {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #262626;
+    color: #d1d1d1;
+    padding: 2em;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.item-grid {
+    max-width: 200px;
+    img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 700px) {
+    
+    /*main {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 24px;
+        gap: 24px;
+    }*/
+}

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  border: 2px solid red;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 59.2px;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, li, ol, ul {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4.0rem;
+}
+
+small, figcaption {
+  font-size: 1.4rem;
+}
+
+.dark-theme {
+  background: #000;
+  color: #fff;
+}
+
+nav {
+  background-color: #034694;
+  height: 45px;
+  border-bottom: 3px solid orange;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav ul {
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  left: -275px;
+  height: 100%;
+  width: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: left 0.57s ease-in-out;
+  transition: left 0.57s ease-in-out;
+}
+
+nav button {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav-closed {
+  left: -275px;
+}
+
+.nav-opened {
+  left: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  border: 2px solid purple;
+  padding: 2em 0;
+  max-width: 840px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  display: flow-root;
+}
+
+h1, p {
+  padding: 0 1rem;
+}
+
+footer {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #262626;
+  color: #d1d1d1;
+  padding: 2em;
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.item-grid {
+  max-width: 200px;
+}
+
+.item-grid img {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  /*main {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 24px;
+        gap: 24px;
+    }*/
+}
+/*# sourceMappingURL=style.css.map */
